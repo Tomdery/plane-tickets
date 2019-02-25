@@ -1,34 +1,32 @@
 <?php
-$firstNameError = "";
+$errorMessage = "";
 
 if(isset($_POST['submit'])){
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST['flightNumber'])) {
-            $firstNameError = "Iveskite vardą";
+        if (empty($_POST)) {
+            $errorMessage = "Būtinas laukelis";
         }
+
         if (empty($_POST['personalNumber'])) {
-            $firstNameError = "Iveskite vardą";
+            $firstNameError = "Įveskite asmens kodą";
         }
         if (empty($_POST['firstName'])) {
             $firstNameError = "Iveskite vardą";
         }
         if (empty($_POST['secondName'])) {
-            $firstNameError = "Iveskite vardą";
+            $firstNameError = "Iveskite pavardę";
         }
         if (empty($_POST['flightFrom'])) {
-            $firstNameError = "Iveskite vardą";
+            $firstNameError = "Pasirinkite iš kur skrendate";
         }
         if (empty($_POST['flightTo'])) {
-            $firstNameError = "Iveskite vardą";
+            $firstNameError = "Pasirinkite į kur skrendate";
         }
         if (empty($_POST['luggage'])) {
-            $firstNameError = "Iveskite vardą";
+            $firstNameError = "Pasirinkite bagažo svorį";
         }
-        if (empty($_POST['comments'])) {
-            $commentsErr = 
-        }
-     if (!empty($_POST['firstName']))
+     if (!empty($_POST))
      {
          $fp = fopen('results.json', 'w');
          fwrite($fp, json_encode($_POST));
