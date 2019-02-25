@@ -1,0 +1,28 @@
+.ticket {
+    margin-left: 30%;
+    width: 30%;
+    background-color: #ffc19b;
+    padding-left: 7%;
+}
+
+.personalInfo > p:nth-child(1) {
+    display: inline-block;
+}
+
+.flightStyle {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.flightStyle > p {
+    text-align: center;
+}
+
+.flightStyle > h4 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 35%;
+    display: inline-block;
+}
