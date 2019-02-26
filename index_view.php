@@ -19,19 +19,15 @@ include "index_post.php";
             <?php endforeach;?>
         </select>
         <!-- if it's not filled, after submit this changes to error message (now it's empty) -->
-       <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <input type="text" name="personalNumber" placeholder="Personal Identification Number*">
-       <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <input type="text" name="firstName" placeholder="First name*">
-	<!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <input type="text" name="secondName" placeholder="Last name*">
-        <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <select name="flightFrom">
@@ -40,7 +36,6 @@ include "index_post.php";
                 <option><?=$from?></option>
             <?php endforeach;?>
         </select>
-        <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <select name="flightTo">
@@ -49,18 +44,15 @@ include "index_post.php";
                 <option><?=$to?></option>
             <?php endforeach;?>
         </select>
-        <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <input type="text" name="price" placeholder="Please enter your price*">
-        <!-- <?php echo $errorMessage?> -->
     <select name="luggage">
         <option>--Click and select*--</option>
         <?php foreach($luggage as $weight): ?>
             <option><?=$weight?></option>
         <?php endforeach;?>
     </select>
-        <!-- <?php echo $errorMessage?> -->
     </fieldset>
     <fieldset>
         <textarea name="comments" id="" cols="30" rows="3" placeholder="If you want to ask something, you can do it here.."></textarea>

@@ -4,6 +4,16 @@ $errorMessage = "";
 
 if(isset($_POST['submit'])){
 
+    $_POST['personalNumber'] = htmlspecialchars($_POST['personalNumber']);
+    $_POST['firstName'] = htmlspecialchars($_POST['firstName']);
+    $_POST['secondName'] = htmlspecialchars($_POST['secondName']);
+    $_POST['price'] = htmlspecialchars($_POST['price']);
+    $_POST['flightNumber'] = htmlspecialchars($_POST['flightNumber']);
+    $_POST['flightFrom'] = htmlspecialchars($_POST['flightFrom']);
+    $_POST['flightTo'] = htmlspecialchars($_POST['flightTo']);
+    $_POST['luggage'] = htmlspecialchars($_POST['luggage']);
+    $_POST['comments'] = htmlspecialchars($_POST['comments']);
+
     // if server is has a request method that is equal to post, do stuff
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // if field is empty of posted object, change error message
